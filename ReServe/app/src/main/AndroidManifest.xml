@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Signin_manage"></activity>
+        <activity android:name=".Payment_reservation"></activity>
+        <activity android:name=".Signin_manage" />
         <activity android:name=".Signin_normal" />
         <activity android:name=".before_signin_select" />
         <activity android:name=".LoginActivity" />
