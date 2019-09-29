@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
+public class StoreAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView store_list;
@@ -22,8 +22,8 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  
         }
     }
 
-    private ArrayList<MainData> my_data_list;
-    MainAdapter(ArrayList<MainData> my_data_list){
+    private ArrayList<StoreData> my_data_list;
+    StoreAdapter(ArrayList<StoreData> my_data_list){
         this.my_data_list = my_data_list;
     }
 
@@ -50,9 +50,9 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  
     }
 }
 
-/*public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
+/*public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder>{
 
-    public List<MainData> mainData  = Collections.emptyList();
+    public List<StoreData> mainData  = Collections.emptyList();
     private Context context;
 
     TextView store_list;
@@ -66,12 +66,12 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  
             store_list_location  = (TextView)view.findViewById(R.id.store_list_location);
         }
     }
-    public MainAdapter(Context context, List<MainData> mainData){
+    public StoreAdapter(Context context, List<StoreData> mainData){
         this.mainData = mainData;
         this.context = context;
     }
     @Override
-    public MainAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public StoreAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.store_item, parent, false);
         // set the view's size, margins, paddings and layout parameters

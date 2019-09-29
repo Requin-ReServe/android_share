@@ -48,12 +48,14 @@
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="30dp"/>
+
     <ListView
         android:id="@+id/menu_list"
-        android:layout_width="330dp"
+        android:layout_width="324dp"
         android:layout_height="230dp"
         android:layout_gravity="center_horizontal"
         android:scrollbarSize="3dp"
+        android:background="@drawable/listview_outside"
         tools:listitem="@layout/menu_item">
 
     </ListView>

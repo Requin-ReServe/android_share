@@ -1,11 +1,11 @@
 package com.example.reserve;
 
-public class MainData {
+public class StoreData {
 
     public String store_list;
     public String store_list_location;
 
-    public MainData(String store_list, String store_list_location) {
+    public StoreData(String store_list, String store_list_location) {
         this.store_list = store_list;
         this.store_list_location = store_list_location;
     }

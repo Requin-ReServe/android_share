@@ -22,9 +22,9 @@ public class my_store_list extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        ArrayList<MainData> my_data_list = new ArrayList<>();
-        my_data_list.add(new MainData("할리스 커피","대전 유성구 어쩌구"));
-        MainAdapter mainAdapter = new MainAdapter(my_data_list);
+        ArrayList<StoreData> my_data_list = new ArrayList<>();
+        my_data_list.add(new StoreData("할리스 커피","대전 유성구 어쩌구"));
+        StoreAdapter mainAdapter = new StoreAdapter(my_data_list);
 
         recyclerView.setAdapter(mainAdapter);
     }
