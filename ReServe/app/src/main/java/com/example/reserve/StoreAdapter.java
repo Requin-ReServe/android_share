@@ -11,20 +11,20 @@ import java.util.ArrayList;
 
 public class StoreAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class StoreViewHolder extends RecyclerView.ViewHolder {
         TextView store_list;
         TextView store_list_location;
 
-        MyViewHolder(View view){
+        StoreViewHolder(View view){
             super(view);
             store_list = view.findViewById(R.id.store_list);
             store_list_location = view.findViewById(R.id.store_list_location);
         }
     }
 
-    private ArrayList<StoreData> my_data_list;
+    private ArrayList<StoreData> store_data_list;
     StoreAdapter(ArrayList<StoreData> my_data_list){
-        this.my_data_list = my_data_list;
+        this.store_data_list = my_data_list;
     }
 
     @Override
@@ -32,21 +32,21 @@ public class StoreAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_my_store_list, parent, false);
 
-        return new MyViewHolder(v);
+        return new StoreViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
-        MyViewHolder myViewHolder = (MyViewHolder) holder;
+        StoreViewHolder storeViewHolder = (StoreViewHolder) holder;
 
-        myViewHolder.store_list.setText(my_data_list.get(position).store_list);
-        myViewHolder.store_list_location.setText(my_data_list.get(position).store_list_location);
+        storeViewHolder.store_list.setText(store_data_list.get(position).store_list);
+        storeViewHolder.store_list_location.setText(store_data_list.get(position).store_list_location);
     }
 
     @Override
     public int getItemCount() {
-        return my_data_list.size();
+        return store_data_list.size();
     }
 }
 

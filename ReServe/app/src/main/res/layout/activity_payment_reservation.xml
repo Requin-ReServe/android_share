@@ -49,7 +49,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="30dp"/>
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/menu_list"
         android:layout_width="324dp"
         android:layout_height="230dp"
@@ -58,7 +58,7 @@
         android:background="@drawable/listview_outside"
         tools:listitem="@layout/menu_item">
 
-    </ListView>
+    </android.support.v7.widget.RecyclerView>
 
     <TextView
         android:layout_width="wrap_content"
